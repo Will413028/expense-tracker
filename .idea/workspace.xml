@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f19afce3-a5a7-4414-ae50-0c8beafce810" name="Default Changelist" comment="Project init">
-      <change afterPath="$PROJECT_DIR$/models/expense-tracker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="f19afce3-a5a7-4414-ae50-0c8beafce810" name="Default Changelist" comment="Add mongoose">
+      <change beforePath="$PROJECT_DIR$/models/expense-tracker.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Record.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
       <workItem from="1630398973793" duration="3275000" />
       <workItem from="1630442642455" duration="932000" />
       <workItem from="1630444157263" duration="694000" />
-      <workItem from="1630527425849" duration="556000" />
+      <workItem from="1630527425849" duration="849000" />
     </task>
     <task id="LOCAL-00001" summary="Project init">
       <created>1630399716738</created>
@@ -67,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630399716739</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add mongoose">
+      <created>1630528288732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1630528288733</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +90,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project init" />
+    <MESSAGE value="Add mongoose" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mongoose" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
-const expenseSchema = new Schema({
+
+const recordSchema = new Schema({
     id: {
         type: Number, // 資料型別是字串
         required: true // 這是個必填欄位
@@ -18,4 +19,5 @@ const expenseSchema = new Schema({
         type: String, // 資料型別是字串
     }
 })
-module.exports = mongoose.model('expense', expenseSchema)
+
+module.exports = mongoose.model('Record', recordSchema)
