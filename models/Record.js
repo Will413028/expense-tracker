@@ -2,24 +2,21 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const recordSchema = new Schema({
-    id: {
-        type: Number, // 資料型別是字串
-        required: true // 這是個必填欄位
-    },
     name: {
         type: String,
-        required: true// 資料型別是字串
+        required: true
     },
     date: {
         type: Date,
-        required: true// 資料型別是字串
+        required: true
     },
     amount: {
         type: Number,
-        required: true// 資料型別是字串
+        required: true
     },
     category: {
-        type: String // 資料型別是字串
+        type: String,
+        required: true
     }
 })
 
