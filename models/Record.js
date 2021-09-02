@@ -7,16 +7,19 @@ const recordSchema = new Schema({
         required: true // 這是個必填欄位
     },
     name: {
-        type: String, // 資料型別是字串
+        type: String,
+        required: true// 資料型別是字串
     },
     date: {
-        type: Date, // 資料型別是字串
+        type: Date,
+        required: true// 資料型別是字串
     },
     amount: {
-        type: Number, // 資料型別是字串
+        type: Number,
+        required: true// 資料型別是字串
     },
     category: {
-        type: String, // 資料型別是字串
+        type: String // 資料型別是字串
     }
 })
 
