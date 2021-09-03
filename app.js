@@ -23,10 +23,10 @@ app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }))
 app.set('view engine', 'hbs')
 
 app.get('/', (req, res) => {
-    Record.find() // 取出 Todo model 裡的所有資料
-        .lean() // 把 Mongoose 的 Model 物件轉換成乾淨的 JavaScript 資料陣列
-        .then(records => res.render('index', { records })) // 將資料傳給 index 樣板
-        .catch(error => console.error(error)) // 錯誤處理
+    Record.find()
+        .lean()
+        .then(records => res.render('index', { records }))
+        .catch(error => console.error(error))
 })
 
 app.get('/records/new', (req, res) => {
@@ -43,6 +43,30 @@ app.post('/records', (req, res) => {
 
     record.save()
         .then(() => res.redirect('/'))
+        .catch(error => console.log(error))
+})
+
+// edit data
+app.get('/records/:id/edit', (req, res) => {
+    const id = req.params.id
+    Record.findById(id)
+        .lean()
+        .then((record) => res.render('edit', { record }))
+        .catch(error => console.log(error))
+})
+
+app.post('/records/:id/edit', (req, res) => {
+    const id = req.params.id
+    const { name, category, date, amount } = req.body
+    Record.findById(id)
+        .then(record => {
+            record.name = req.body.name
+            record.category = req.body.category
+            record.date = req.body.date
+            record.amount = req.body.amount
+            return record.save()
+        })
+        .then(()=> res.redirect(`/records/${id}`))
         .catch(error => console.log(error))
 })
 

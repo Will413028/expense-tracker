@@ -2,7 +2,12 @@
     {{#each records}}
         <li>
             {{this.name}}
+            <a href="./records/{{this._id}}/edit">
+                <button class="btn btn-primary btn-sm">Edit</button>
+            </a>
         </li>
     {{/each}}
 </ul>
-<a href="./records/new">Create</a>
+<a href="./records/new">
+    <button class="btn btn-primary btn-sm">Create</button>
+</a>

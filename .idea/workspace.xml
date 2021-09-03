@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f19afce3-a5a7-4414-ae50-0c8beafce810" name="Default Changelist" comment="Add index.hbs">
-      <change afterPath="$PROJECT_DIR$/views/new.hbs" afterDir="false" />
+    <list default="true" id="f19afce3-a5a7-4414-ae50-0c8beafce810" name="Default Changelist" comment="Add Create function &amp; body-parser">
+      <change afterPath="$PROJECT_DIR$/views/edit.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Record.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Record.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
       <workItem from="1630398973793" duration="3275000" />
       <workItem from="1630442642455" duration="932000" />
       <workItem from="1630444157263" duration="694000" />
-      <workItem from="1630527425849" duration="4357000" />
+      <workItem from="1630527425849" duration="8897000" />
     </task>
     <task id="LOCAL-00001" summary="Project init">
       <created>1630399716738</created>
@@ -91,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630615030761</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Create function &amp; body-parser">
+      <created>1630618430045</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1630618430045</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +117,7 @@
     <MESSAGE value="Add mongoose" />
     <MESSAGE value="Add handlebars" />
     <MESSAGE value="Add index.hbs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add index.hbs" />
+    <MESSAGE value="Add Create function &amp; body-parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Create function &amp; body-parser" />
   </component>
 </project>
