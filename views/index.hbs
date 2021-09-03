@@ -1,11 +1,27 @@
+<div class="container">
 <div class="totalAmount d-flex justify-content-center align-items-center">
     <h2 for="totalAmount" class="col-3 text-end">Total:</h2>
-    <h1 style="display: inline;">{{totalAmount}}</h1>
+    <h1>{{totalAmount}}</h1>
+    <div class="col-3">
+        <form action="/" method="GET" onchange="submit();">
+            <select class="form-select form-select-lg mb-3" name="category"  id="category" required>
+                <option value="" {{#if (isEqual filteredCategory "" )}} selected {{/if}}>Total</option>
+                <option value="Home & Utilities" {{#if (isEqual filteredCategory "Home & Utilities" )}} selected {{/if}}>Home & Utilities</option>
+                <option value="Transportation" {{#if (isEqual filteredCategory "Transportation" )}} selected {{/if}}>Transportation</option>
+                <option value="Leisure & Entertainment" {{#if (isEqual filteredCategory "Leisure & Entertainment" )}} selected {{/if}}>Leisure & Entertainment</option>
+                <option value="Restaurant & Dining" {{#if (isEqual filteredCategory "Restaurant & Dining" )}} selected {{/if}}>Restaurant & Dining</option>
+                <option value="Other" {{#if (isEqual filteredCategory "Other" )}} selected {{/if}}>Other</option>
+            </select>
+        </form>
+    </div>
 </div>
 <ul class="list-group">
     {{#each records}}
         <li class="list-group-item">
             <div class="row">
+                <div class="col-2 my-auto text-center">
+                    <i class="fs-2 {{this.icon}}" style="color:lightblue" ></i>
+                </div>
                 <div class="col-auto mr-auto">
                     <h4>{{this.name}}</h4>
                     <small>{{this.date}}</small>
@@ -22,7 +38,9 @@
         </li>
     {{/each}}
 </ul>
+<div class="d-flex justify-content-center m-5">
 <a href="./records/new">
-    <button class="btn btn-primary btn-sm">Create</button>
+    <button class="btn btn-primary btn-lg">Create</button>
 </a>
-
+</div>
+</div>
