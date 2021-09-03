@@ -1,9 +1,9 @@
-// 引用 Express 與 Express 路由器
 const express = require('express')
 const router = express.Router()
-// 引用 Todo model
+const moment = require("moment");
+
 const Record = require('../../models/Record')
-// 定義首頁路由
+
 router.get('/', (req, res) => {
     let totalAmount = 0
     Record.find()
@@ -11,10 +11,11 @@ router.get('/', (req, res) => {
         .then(records => {
             records.forEach(record => {
                 totalAmount += record.amount
+                record.date = moment(record.date).format('YYYY-MM-DD')
             })
             res.render('index', { records, totalAmount})
 })
         .catch(error => console.error(error))
 })
-// 匯出路由模組
+
 module.exports = router
