@@ -1,16 +1,16 @@
 <h2 for="totalAmount" class="col-3 text-end">Total:</h2>
-<div class="col-5" style="font-size: 50px;color:#e3885b">{{totalAmount}}</div>
-<ul class="list-group">
+<div class="totalAmount d-flex justify-content-center align-items-center">
+    <span>Total：</span>
+    <h1 style="display: inline;">{{totalAmount}}</h1>
+</div><ul class="list-group">
     {{#each records}}
         <li class="list-group-item">
             <div class="row">
                 <div class="col-auto mr-auto">
-
                     <h4>{{this.name}}</h4>
                     <small>{{this.date}}</small>
                 </div>
-                <div class="col-auto amount mr-4">${{this.amount}}</div>
-
+                <h4 class="col-auto amount mr-4" style="display: inline;">${{this.amount}}</h4>
                 <a ref="./records/{{this._id}}/edit">
                     <button class="btn btn-success" >Edit</button>
                 </a>
@@ -18,7 +18,7 @@
                       onsubmit="return confirm('Are you sure want to delete {{this.name}} ?');">
                     <button class="btn btn-danger" type="submit">Delete</button>
                 </form>
-                </div>
+            </div>
         </li>
     {{/each}}
 </ul>
