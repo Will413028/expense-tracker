@@ -5,9 +5,15 @@
             <a href="./records/{{this._id}}/edit">
                 <button class="btn btn-primary btn-sm">Edit</button>
             </a>
+            <form action="/records/{{this._id}}?_method=DELETE" method="POST" style="display: inline;"
+                  onsubmit="return confirm('Are you sure want to delete {{this.name}} ?');">
+                <button class="btn btn-light" type="submit">Delete</button>
+            </form>
+
         </li>
     {{/each}}
 </ul>
 <a href="./records/new">
     <button class="btn btn-primary btn-sm">Create</button>
 </a>
+
