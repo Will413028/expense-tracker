@@ -3,8 +3,11 @@ const mongoose = require('mongoose')
 const exphbs = require('express-handlebars')
 const Record = require('./models/Record')
 const bodyParser = require('body-parser')
+const methodOverride = require('method-override')
 
 const app = express()
+
+app.use(methodOverride('_method'))
 app.use(bodyParser.urlencoded({ extended: true }))
 
 mongoose.connect('mongodb://localhost/expense-tracker', { useNewUrlParser: true, useUnifiedTopology: true })
