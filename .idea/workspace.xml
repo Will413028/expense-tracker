@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f19afce3-a5a7-4414-ae50-0c8beafce810" name="Default Changelist" comment="Add edit function">
-      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/modules/home.js" afterDir="false" />
+    <list default="true" id="f19afce3-a5a7-4414-ae50-0c8beafce810" name="Default Changelist" comment="Add method-override">
+      <change afterPath="$PROJECT_DIR$/routes/modules/records.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/edit.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/modules/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/modules/home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
       <workItem from="1630398973793" duration="3275000" />
       <workItem from="1630442642455" duration="932000" />
       <workItem from="1630444157263" duration="694000" />
-      <workItem from="1630527425849" duration="9219000" />
+      <workItem from="1630527425849" duration="10171000" />
     </task>
     <task id="LOCAL-00001" summary="Project init">
       <created>1630399716738</created>
@@ -103,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630696155629</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add method-override">
+      <created>1630696491596</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1630696491596</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +134,7 @@
     <MESSAGE value="Add index.hbs" />
     <MESSAGE value="Add Create function &amp; body-parser" />
     <MESSAGE value="Add edit function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add edit function" />
+    <MESSAGE value="Add method-override" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add method-override" />
   </component>
 </project>
