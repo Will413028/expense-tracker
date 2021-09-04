@@ -12,9 +12,14 @@ const app = express()
 app.engine('hbs', exphbs({
     defaultLayout: 'main',
     extname: '.hbs' ,
-    helpers: { 'isEqual': function(a, b) {
+    helpers: {
+        'isEqual': function(a, b) {
             return a === b
-        }}
+        },
+        'dateFormate': function (date) {
+            return date.toJSON().substring(0, 10)
+        }
+    }
 }))
 
 app.set('view engine', 'hbs')

@@ -7,21 +7,22 @@
             <input type="text" class="form-control" name="name" id="name" aria-describedby="name" placeholder="" value="{{name}}"
                    required>
         </div>
+
         <div class="form-group">
-            <label for="category">Category*</label>
-            <input type="list" list="category" class="form-control" name="category" id="category"
-                   placeholder="" value="{{category}}" required>
-            <datalist id="category">
-                <option>Home & Utilities</option>
-                <option>Transportation</option>
-                <option>Leisure & Entertainment</option>
-                <option>Restaurant & Dining</option>
-                <option>Other</option>
-            </datalist>
+            <label for="category">Category*：</label>
+            <select name="category" class="form-select rounded-0 " id="category"  value="{{category}}" required>
+                <option selected disabled> Select Category</option>
+                <option value="Home & Utilities">Home & Utilities</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Leisure & Entertainment">Leisure & Entertainment</option>
+                <option value="Restaurant & Dining">Restaurant & Dining</option>
+                <option value="Other">Other</option>
+            </select>
         </div>
+
         <div class="form-group">
-            <label for="Date">Date*</label>
-            <input type="text" class="form-control" name="date" id="date" placeholder="" value="{{date}}" required>
+            <label for="date">Date*</label>
+            <input type="date" class="form-control" name="date" id="date" placeholder="" value="{{ date}}" required>
         </div>
         <div class="form-group">
             <label for="amount">Amount</label>
