@@ -7,7 +7,7 @@ console.log(recordList.results)
 
 
 db.once('open', () => {
-    recordList.forEach(record => {
+    recordList.results.forEach(record => {
         Record.create({
             name: record.name,
             date: record.date,
