@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs')
 
 const Category = require('../category')
 const User = require('../user')
-const Record = require('../record')
+const Record = require('../Record')
 
 const users = require('./user.json').users
 const records = require('./record.json').records
