@@ -1,34 +1,14 @@
-const Category = require('../category')
+
 const db = require('../../config/mongoose')
 
-const categoryData = [
-    {
-        name: 'Home & Utilities',
-        icon: 'fas fa-home'
-    },
-    {
-        name: 'Transportation',
-        icon: 'fas fa-shuttle-van'
-    },
-    {
-        name: 'Leisure & Entertainment',
-        icon: 'fas fa-grin-beam'
-    },
-    {
-        name: 'Restaurant & Dining',
-        icon: 'fas fa-utensils'
-    },
-    {
-        name: 'Other',
-        icon: 'fas fa-pen'
-    }
-]
+const Category = require('../category')
+const categories = require('./category.json').categories
 
-db.once('open', () => {
-    Category.create(categoryData)
+db.once('open', async () => {
+    await Category.create(categories)
         .then(() => {
-            console.log('categorySeeder done')
-            return db.close()
+            console.log('categorySeeder created.')
+            process.exit()
         })
-        .catch((err) => console.error(err))
+        .catch(err => console.log(err))
 })

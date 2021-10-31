@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "name": "Home & Utilities",
+      "icon": "fas fa-home"
+    },
+    {
+      "name": "Transportation",
+      "icon": "fas fa-shuttle-van"
+    },
+    {
+      "name": "Leisure & Entertainment",
+      "icon": "fas fa-grin-beam"
+    },
+    {
+      "name": "Restaurant & Dining",
+      "icon": "fas fa-utensils"
+    },
+    {
+      "name": "Other",
+      "icon": "fas fa-pen"
+    }
+  ]
+}

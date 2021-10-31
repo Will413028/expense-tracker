@@ -1,0 +1,68 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "name": "Internet bill",
+      "date": "2021-09-30",
+      "amount": "1000",
+      "category": "Home & Utilities",
+      "user": "user1"
+    },
+    {
+      "id": 2,
+      "name": "Taxi",
+      "date": "2021-10-15",
+      "amount": "300",
+      "category": "Transportation",
+      "user": "user1"
+    },
+    {
+      "id": 3,
+      "name": "Shopping",
+      "date": "2021-10-18",
+      "amount": "30000",
+      "category": "Leisure & Entertainment",
+      "user": "user1"
+    },
+    {
+      "id": 4,
+      "name": "Steak",
+      "date": "2021-10-19",
+      "amount": "3000",
+      "category": "Restaurant & Dining",
+      "user": "user1"
+    },
+    {
+      "id": 5,
+      "name": "Hamburger",
+      "date": "2021-10-22",
+      "amount": "100",
+      "category": "Restaurant & Dining",
+      "user": "user1"
+    },
+    {
+      "id": 6,
+      "name": "House Rent",
+      "date": "2021-10-10",
+      "amount": "1000",
+      "category": "Home & Utilities",
+      "user": "user2"
+    },
+    {
+      "id": 7,
+      "name": "Beef noodles",
+      "date": "2021-10-19",
+      "amount": "300",
+      "category": "Restaurant & Dining",
+      "user": "user2"
+    },
+    {
+      "id": 8,
+      "name": "Watch movie",
+      "date": "2021-10-22",
+      "amount": "500",
+      "category": "Leisure & Entertainment",
+      "user": "user2"
+    }
+  ]
+}
