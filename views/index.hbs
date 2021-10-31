@@ -23,11 +23,11 @@
         <li class="list-group-item">
             <div class="row">
                 <div class="col-2 my-auto text-center">
-                    <i class="fs-2 {{this.icon}}" style="color:lightblue" ></i>
+                    <i class="{{this.icon}}" style="color:lightblue" ></i>
                 </div>
                 <div class="col-auto mr-auto">
                     <h4>{{this.name}}</h4>
-                    <small>{{this.date}}</small>
+                    <small>{{dateFormate this.date}}</small>
                 </div>
                 <h4 class="col-auto amount mr-4" style="display: inline;">${{this.amount}}</h4>
                 <a href="./records/{{this._id}}/edit">
@@ -42,7 +42,7 @@
     {{/each}}
 </ul>
 {{/if}}
-    <div class="d-flex justify-content-center m-5">
+    <div class="d-flex justify-content-center m-3">
 <a href="./records/new">
     <button class="btn btn-primary btn-lg">Create</button>
 </a>

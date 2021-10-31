@@ -4,7 +4,7 @@ const router = express.Router()
 const Record = require('../../models/record')
 const Category = require('../../models/category')
 
-// new.hbs (create)
+// create
 router.get('/new', (req, res) => {
     return res.render('new')
 })
@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
         .catch(error => console.log(error))
 })
 
-// edit.hbs (update)
+// update
 router.get('/:id/edit', (req, res) => {
     Record.findOne({ _id: req.params.id, userId: req.user._id })
         .populate('categoryId')
