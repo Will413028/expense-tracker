@@ -1,20 +1,18 @@
 
 module.exports = {
-    eq: function (a, b) {
+    isEqual: function (a, b) {
         if (a === b) {
             return true
         } else {
             return false
         }
     },
-    total: function (array) {
-        let sum = 0
-
-        array.forEach(function (doc) {
-            sum += doc.amount
+    totalAmount: function (records) {
+        let totalAmount = 0
+        records.forEach(record => {
+            totalAmount += Number(record.amount)
         })
-
-        return sum // return total
+        return totalAmount
     },
     dateFormate: function (date) {
         return date.toJSON().substring(0, 10)

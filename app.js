@@ -12,14 +12,7 @@ const PORT = process.env.PORT || 3000
 app.engine('hbs', exphbs({
     defaultLayout: 'main',
     extname: '.hbs' ,
-    helpers: {
-        'isEqual': function(a, b) {
-            return a === b
-        },
-        'dateFormate': function (date) {
-            return date.toJSON().substring(0, 10)
-        }
-    }
+    helpers: require('./helper/helpers')
 }))
 
 app.set('view engine', 'hbs')
