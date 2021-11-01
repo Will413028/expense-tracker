@@ -2,43 +2,68 @@
 https://stark-escarpment-96022.herokuapp.com/
 ## Features
 
-- All expense lists on the home page
-- The total amount of all expense lists on the home page
-- Users can ```create``` a new item for the latest expense
-- Users can ```update``` the expense items
-- Users can ```delete``` the items
+- REGISTER: sign up an account with name, email, password
+- LOGIN: sign in to review your own expenses
+- LOGIN with 3rd-party account: quick login with Facebook account
+- LOGOUT: sign out the account by clicking the logout button
+- CREATE: record your expense (with item name, date, category, amount) at the create page
+- READ: review all the expenses at the home page
+- UPDATE: click the edit button to modify expense's data
+- DELETE: click the delete button to delete the expense
+- FILTER: filter the expenses by category
 - Provide a filter function based on different categories
 
 ## Getting Started
 
 ### Installation
 
-1. Use ```cd``` to navigate to the directory where you would like to clone the repository
-
-2. Use command line below on your Terminal to start the clone
+1. Clone the files
 ``` 
-https://github.com/Will413028/expense-tracker.git
+git clone https://github.com/Will413028/expense-tracker.git
 ```
 
-3. Initialisation
+2. Install the npm packages
 
 ```
 npm install 
 ```
-4. Executing program
 
+3. Create .env file
+```
+touch .env
+```
+4. Run MongoDB Server
+```
+./mongod --dbpath <path to mongodb-data directory>
+```
+5. Create seeder
+
+```
+npm run seed
+```
+6. Run the project
 ```
 npm run dev
 ```
+While the terminal returns Express is listening on localhost:3000, please visit http://localhost:3000 on your browser.
+
+## Dummy user data
+After inserting the seeder, you may use the following dummy data to experience this web application.
+
+| Email              | Password |
+| -------------------| ---------|
+| user1@example.com  | 12345678 |
+| user2@example.com  | 12345678 |
 
 ## Packages and Versions
 
-- [npm](https://www.npmjs.com/) - 6.4.1
-- [nodemon](https://www.npmjs.com/package/nodemon) - 2.0.12
-- [express](https://www.npmjs.com/package/express) - 4.17.1
-- [express-Handlebars](https://www.npmjs.com/package/express-handlebars) - 5.3.3
-- [mongoose](https://www.npmjs.com/package/mongoose) - 6.0.1
-- [method-override](https://www.npmjs.com/package/method-override) - 3.0.0
-- [moment](https://www.npmjs.com/package/moment) - 2.29.1
-- [bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - 4.2.1
-- [font-aweomse](https://fontawesome.com/v5/changelog/latest) - 5.15.3
+- Node.js & npm - JavaScript runtime environment
+- Express.js - web application framework
+- Express-Handlebars - template engine
+- MongoDB - document-oriented database
+- Mongoose - MongoDB object modeling tool(OBM)
+- body-parser - middleware
+- method-override - middleware
+- express-session - middleware
+- passport - authentication middleware for Node.js
+- bcrypt.js - middleware
