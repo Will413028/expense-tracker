@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
         .catch(error => console.error(error))
 })
 
-// filter
 router.get('/filter', async (req, res) => {
     const userId = req.user._id
     const category = req.query.category

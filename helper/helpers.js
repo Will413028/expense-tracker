@@ -1,11 +1,7 @@
 
 module.exports = {
     isEqual: function (a, b) {
-        if (a === b) {
-            return true
-        } else {
-            return false
-        }
+        if (a === b) return 'selected'
     },
     totalAmount: function (records) {
         let totalAmount = 0
